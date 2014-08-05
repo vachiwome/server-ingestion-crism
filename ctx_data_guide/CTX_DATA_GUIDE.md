@@ -8,7 +8,8 @@ or download the shapefiles manually from the PDS ODE: http://ode.rsl.wustl.edu/m
 3. Open ctx_mosaic_inside_extent.py in a text editor and change the paths to the CRISM MRDR and CTX footprint shapefiles:
 4. Also change in ctx_mosaic_inside_extent.py the .SH template for blackpearl to reflect your own account. 
 The following screenshot shows the line numbers of the template in the python script.
-![alt tag](https://raw.github.com/vachiwome/server-ingestion-crism/patch-1/ctx_data_guide/img/ctx_mosaic_inside_extent.py.png)
+
+<img src="https://raw.github.com/vachiwome/server-ingestion-crism/patch-1/ctx_data_guide/img/ctx_mosaic_inside_extent.py.png" align="left" alt="alt text" title="Title" />
 
 IMPORTANT:
 Make sure you set the correct email address!
@@ -34,7 +35,9 @@ Please do not remove any %s.
 ## Make 'islands' using ArcGIS
 
 1. Open ArcGIS and add the shapefile which was created in the new folder
-![alt tag](https://raw.github.com/vachiwome/server-ingestion-crism/patch-1/ctx_data_guide/img/arcgis.png)
+
+<img src="https://raw.github.com/vachiwome/server-ingestion-crism/patch-1/ctx_data_guide/img/arcgis.png" 
+ align="left" alt="alt" title="title"/>
 
 2. Use the Editor to remove those features which have too small area's (that's a bit of trial and error but just be 
 aware that too small slivers will result in an error during mosaicking). 
@@ -42,14 +45,21 @@ You can use http://www.jennessent.com/arcgis/shapes_graphics.htm to derive area'
 small to large in the Attribute Table.
 
 3. Open the Python window
-![alt tag](https://raw.github.com/vachiwome/server-ingestion-crism/patch-1/ctx_data_guide/img/pythonwindow.png)
+
+<img src="https://raw.github.com/vachiwome/server-ingestion-crism/patch-1/ctx_data_guide/img/pythonwindow.png"
+ align="left" alt="alt" title="title"/>
+
 
 4. Select those features belonging to one 'ISLAND':
-![alt tag](https://raw.github.com/vachiwome/server-ingestion-crism/patch-1/ctx_data_guide/img/islandfeatures.png)
+
+<img src="https://raw.github.com/vachiwome/server-ingestion-crism/patch-1/ctx_data_guide/img/islandfeatures.png" 
+ align="left" alt="alt" title="title">
   
 You can use the Lasso tool:
-![alt tag](https://raw.github.com/vachiwome/server-ingestion-crism/patch-1/ctx_data_guide/img/lassotool.png)
-  
+
+<img src="https://raw.github.com/vachiwome/server-ingestion-crism/patch-1/ctx_data_guide/img/lassotool.png" 
+ align="left" alt="alt" title="title">
+
 5. Open the Attribute Table and check in the ISLAND field that all selected rows are empty. If one or more contain 
 BOTTOM unselect them. Please check if the ISLAND is still one single ISLAND once you unselect the BOTTOM rows! 
 You can also give all the BOTTOM ones a distinct color using Symbology.
@@ -76,7 +86,7 @@ You can also give all the BOTTOM ones a distinct color using Symbology.
  Before running set the folder variable to the new folder path. And set the island variable to a distinct name.
 7. Repeat 4,5 and 6 for the other islands. With respect to 6 set the island variable to a distinct name.
 8. Make sure to clear selected features
-![alt tag](https://raw.github.com/vachiwome/server-ingestion-crism/patch-1/ctx_data_guide/img/selectedfeatures.png)
+<img src="https://raw.github.com/vachiwome/server-ingestion-crism/patch-1/ctx_data_guide/img/selectedfeatures.png"       alt="alt" title="title">
 
 9. Make sure to select the shapefile in the Table of Contents (warning)
 
