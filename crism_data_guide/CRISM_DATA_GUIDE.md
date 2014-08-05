@@ -62,9 +62,8 @@ This python script will use (if present) inrasdaman.txt (made by ingestlist.py) 
         ls *trr3.img>data.txt
         ```
 2. Open run_trdr.pro and make sure the input and output folders are set correctly.
-        ```
-        ![run_trdr.pro](img/run_trdr.pro.png "run_trdr.pro")
-        ```
+![alt tag](https://raw.github.com/vachiwome/server-ingestion-crism/patch-1/crism_data_guide/img/run_trdr.pro.png)
+
 3. Start ENVI classic in Linux
         ```
         envi -classic
@@ -91,10 +90,8 @@ This python script will use (if present) inrasdaman.txt (made by ingestlist.py) 
         python rasset.py -add setname.def
         ```     
 3. Do the above for all types of CRISM (TRDR IR, TRDR VNIR, MRDR, etcetera)!!!
-4. Update or create crismingest.ini which contains the following three lines:   
-        ```
-        ![crismingest.ini](img/crismingest.ini.png "crismingest.ini")
-        ```     
+4. Update or create crismingest.ini which contains the following three lines: 
+![alt tag](https://raw.github.com/vachiwome/server-ingestion-crism/patch-1/crism_data_guide/img/crismingest.ini.png)
         
    The region variable is added to the JSON file for each CRISM. This is needed by the classic client.
 
