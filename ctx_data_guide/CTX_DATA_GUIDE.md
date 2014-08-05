@@ -1,20 +1,21 @@
 # CTX data guide
-## Set up the working folder
+## Set up the working folder       
 1. Save ctx_mosaic_inside_extent.py, badctxproductid.txt, bottomctxproductid.txt to a working folder.    
 
-2. You need to get the CRISM MRDR and CTX footprint shapefiles. Use the pds_updates.py script explained in CRISM data guide 
-or download the shapefiles manually from the PDS ODE: http://ode.rsl.wustl.edu/mars/coverage/ODE_Mars_shapefile.html  
+2. You need to get the CRISM MRDR and CTX footprint shapefiles. Use the pds_updates.py script explained in CRISM data guide or download the shapefiles manually from the PDS ODE: http://ode.rsl.wustl.edu/mars/coverage/ODE_Mars_shapefile.html          
 
-3. Open ctx_mosaic_inside_extent.py in a text editor and change the paths to the CRISM MRDR and CTX footprint shapefiles:
-4. Also change in ctx_mosaic_inside_extent.py the .SH template for blackpearl to reflect your own account. 
-The following screenshot shows the line numbers of the template in the python script.
+3. Open ctx_mosaic_inside_extent.py in a text editor and change the paths to the CRISM MRDR and CTX footprint shapefiles:         
 
-<img src="https://raw.github.com/vachiwome/server-ingestion-crism/patch-1/ctx_data_guide/img/ctx_mosaic_inside_extent.py.SH.png" align="left" alt="alt text" title="Title" />
+<img src="https://raw.github.com/vachiwome/server-ingestion-crism/patch-1/ctx_data_guide/img/ctx_mosaic_inside_extent.py.png" align="left" alt="alt text" title="Title" />
 
-IMPORTANT:
-Make sure you set the correct email address!
-Please do not remove any %s.
+4. Also change in ctx_mosaic_inside_extent.py the .SH template for blackpearl to reflect your own account. The following screenshot shows the line numbers of the template in the python script.          
 
+<img src="https://raw.github.com/vachiwome/server-ingestion-crism/patch-1/ctx_data_guide/img/ctx_mosaic_inside_extent.py.SH.png" align="left" alt="alt text" title="Title" />       
+          
+IMPORTANT:          
+Make sure you set the correct email address!      
+Please do not remove any %s.       
+          
 ## Check CTX browse imagery
 
 1. Run ctx_mosaic_inside_extent.py
