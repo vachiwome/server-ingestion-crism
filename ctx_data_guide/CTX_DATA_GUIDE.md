@@ -7,7 +7,7 @@ or download the shapefiles manually from the PDS ODE: http://ode.rsl.wustl.edu/m
 
 3. Open ctx_mosaic_inside_extent.py in a text editor and change the paths to the CRISM MRDR and CTX footprint shapefiles:
 4. Also change in ctx_mosaic_inside_extent.py the .SH template for blackpearl to reflect your own account. 
-The following screenshot shows the line numbers of the template in the python script.   
+The following screenshot shows the line numbers of the template in the python script.
 ![alt tag](https://raw.github.com/vachiwome/server-ingestion-crism/patch-1/ctx_data_guide/img/ctx_mosaic_inside_extent.py.png)
 
 IMPORTANT:
