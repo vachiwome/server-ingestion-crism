@@ -9,7 +9,7 @@ or download the shapefiles manually from the PDS ODE: http://ode.rsl.wustl.edu/m
 4. Also change in ctx_mosaic_inside_extent.py the .SH template for blackpearl to reflect your own account. 
 The following screenshot shows the line numbers of the template in the python script.
 
-<img src="https://raw.github.com/vachiwome/server-ingestion-crism/patch-1/ctx_data_guide/img/ctx_mosaic_inside_extent.py.png" align="left" alt="alt text" title="Title" />
+     <img src="https://raw.github.com/vachiwome/server-ingestion-crism/patch-1/ctx_data_guide/img/ctx_mosaic_inside_extent.py.png" align="left" alt="alt text" title="Title" />
 
 IMPORTANT:
 Make sure you set the correct email address!
@@ -37,7 +37,7 @@ Please do not remove any %s.
 1. Open ArcGIS and add the shapefile which was created in the new folder
 
 <img src="https://raw.github.com/vachiwome/server-ingestion-crism/patch-1/ctx_data_guide/img/arcgis.png" 
- align="left" alt="alt" title="title"/>
+ alt="alt" title="title"/>
 
 2. Use the Editor to remove those features which have too small area's (that's a bit of trial and error but just be 
 aware that too small slivers will result in an error during mosaicking). 
@@ -47,18 +47,18 @@ small to large in the Attribute Table.
 3. Open the Python window
 
 <img src="https://raw.github.com/vachiwome/server-ingestion-crism/patch-1/ctx_data_guide/img/pythonwindow.png"
- align="left" alt="alt" title="title"/>
+ alt="alt" title="title"/>
 
 
 4. Select those features belonging to one 'ISLAND':
 
 <img src="https://raw.github.com/vachiwome/server-ingestion-crism/patch-1/ctx_data_guide/img/islandfeatures.png" 
- align="left" alt="alt" title="title">
+ alt="alt" title="title">
   
 You can use the Lasso tool:
 
 <img src="https://raw.github.com/vachiwome/server-ingestion-crism/patch-1/ctx_data_guide/img/lassotool.png" 
- align="left" alt="alt" title="title">
+ alt="alt" title="title">
 
 5. Open the Attribute Table and check in the ISLAND field that all selected rows are empty. If one or more contain 
 BOTTOM unselect them. Please check if the ISLAND is still one single ISLAND once you unselect the BOTTOM rows! 
