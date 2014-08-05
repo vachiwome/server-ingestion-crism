@@ -41,14 +41,13 @@ aware that too small slivers will result in an error during mosaicking).
 You can use http://www.jennessent.com/arcgis/shapes_graphics.htm to derive area's of polygons and then sort them from 
 small to large in the Attribute Table.
 
-3. Open the Python window 
-
+3. Open the Python window
 ![alt tag](https://raw.github.com/vachiwome/server-ingestion-crism/patch-1/ctx_data_guide/img/pythonwindow.png)
 
 4. Select those features belonging to one 'ISLAND':
 ![alt tag](https://raw.github.com/vachiwome/server-ingestion-crism/patch-1/ctx_data_guide/img/islandfeatures.png)
   
-  You can use the Lasso tool:
+You can use the Lasso tool:
 ![alt tag](https://raw.github.com/vachiwome/server-ingestion-crism/patch-1/ctx_data_guide/img/lassotool.png)
   
 5. Open the Attribute Table and check in the ISLAND field that all selected rows are empty. If one or more contain 
