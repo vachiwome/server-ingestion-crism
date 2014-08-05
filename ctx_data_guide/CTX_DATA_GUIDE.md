@@ -9,7 +9,7 @@ or download the shapefiles manually from the PDS ODE: http://ode.rsl.wustl.edu/m
 4. Also change in ctx_mosaic_inside_extent.py the .SH template for blackpearl to reflect your own account. 
 The following screenshot shows the line numbers of the template in the python script.
 
-     <img src="https://raw.github.com/vachiwome/server-ingestion-crism/patch-1/ctx_data_guide/img/ctx_mosaic_inside_extent.py.png" align="left" alt="alt text" title="Title" />
+<img src="https://raw.github.com/vachiwome/server-ingestion-crism/patch-1/ctx_data_guide/img/ctx_mosaic_inside_extent.py.SH.png" align="left" alt="alt text" title="Title" />
 
 IMPORTANT:
 Make sure you set the correct email address!
@@ -20,17 +20,21 @@ Please do not remove any %s.
 1. Run ctx_mosaic_inside_extent.py
      ```
       Uses ArcPy so needs Windows
+      
       python ctx_mosaic_inside_extent.py mrdr <ProductId> 1
        
       OR
        
       python ctx_mosaic_inside_extent.py sf <shapefile location> 1
     ```
-    Either refer to a CRISM MRDR ProductId (e.g. T0447_MRRIF_35S023_0256_3) or refer to a polygon shapefile with one polygon feature defining the extent of the mosaic.
-    Please don't forget to use 1 to download browse images from the JMars server.
+     Either refer to a CRISM MRDR ProductId (e.g. T0447_MRRIF_35S023_0256_3) or refer to a polygon shapefile with one        polygon feature defining the extent of the mosaic.     
+     Please don't forget to use 1 to download browse images from the JMars server.
+
 2. In the working folder a new folder has been created with the name of the shapefile or the MRDR ProductId. Within this folder a browse folder has been created. Go through the JMars browse imagery. If you see a bad CTX add the ProductId (the browse image file name) to badctxproductid.txt. If you notice a CTX which is still OK to use but you would like it to be on the bottom of the mosaic add the ProductId to bottomctxproductid.txt
+
 3. You can now delete the browse folder.
-4. If you needed to add files to the bad and/or bottom .txt files please rerun ctx_mosaic_inside_extent.py now using 0 instead of 1.
+
+4. If you needed to add files to the bad and/or bottom .txt files please rerun ctx_mosaic_inside_extent.py now using 0 instead of 1
 
 ## Make 'islands' using ArcGIS
 
