@@ -10,11 +10,13 @@
 
 4. Also change in ctx_mosaic_inside_extent.py the .SH template for blackpearl to reflect your own account. The following screenshot shows the line numbers of the template in the python script.                   
 
-<img src="https://raw.github.com/vachiwome/server-ingestion-crism/patch-1/ctx_data_guide/img/ctx_mosaic_inside_extent.py.SH.png" align="left" alt="alt text" title="Title" />
-
           IMPORTANT:          
           Make sure you set the correct email address!      
-          Please do not remove any %s             
+          Please do not remove any %s   
+
+<img src="https://raw.github.com/vachiwome/server-ingestion-crism/patch-1/ctx_data_guide/img/ctx_mosaic_inside_extent.py.SH.png" align="left" alt="alt text" title="Title" />
+
+
 
 ## Check CTX browse imagery
 1. Run ctx_mosaic_inside_extent.py
