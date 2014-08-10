@@ -4,17 +4,16 @@
 
 2. You need to get the CRISM MRDR and CTX footprint shapefiles. Use the pds_updates.py script explained in CRISM data guide or download the shapefiles manually from the PDS ODE: http://ode.rsl.wustl.edu/mars/coverage/ODE_Mars_shapefile.html          
 
-3. Open ctx_mosaic_inside_extent.py in a text editor and change the paths to the CRISM MRDR and CTX footprint shapefiles:         
-
-<img src="https://raw.github.com/vachiwome/server-ingestion-crism/patch-1/ctx_data_guide/img/ctx_mosaic_inside_extent.py.png" align="left" alt="alt text" title="Title" />
+3. Open ctx_mosaic_inside_extent.py in a text editor and change the paths to the CRISM MRDR and CTX footprint shapefiles:
+<img src="https://raw.github.com/vachiwome/server-ingestion-crism/patch-1/ctx_data_guide/img/ctx_mosaic_inside_extent.py.png" align="left" alt="Change shapefiles" title="Change shapefiles" />
 
 4. Also change in ctx_mosaic_inside_extent.py the .SH template for blackpearl to reflect your own account. The following screenshot shows the line numbers of the template in the python script.                   
 
-<img src="https://raw.github.com/vachiwome/server-ingestion-crism/patch-1/ctx_data_guide/img/ctx_mosaic_inside_extent.py.SH.png" align="left" alt="alt text" title="Title" />
+<img src="https://raw.github.com/vachiwome/server-ingestion-crism/patch-1/ctx_data_guide/img/ctx_mosaic_inside_extent.py.SH.png" align="left" alt="Change the .SH template" title="Change the  .SH template" />       
 
 IMPORTANT:          
 Make sure you set the correct email address!      
-Please do not remove any %s
+Please do not remove any s
 
 ## Check CTX browse imagery
 1. Run ctx_mosaic_inside_extent.py
@@ -41,7 +40,7 @@ Please do not remove any %s
 1. Open ArcGIS and add the shapefile which was created in the new folder
 
 <img src="https://raw.github.com/vachiwome/server-ingestion-crism/patch-1/ctx_data_guide/img/arcgis.png" 
- alt="alt" title="title"/>
+ alt="Add shapefile to arcgis" title="Add shapefile to arcgis"/>
 
 2. Use the Editor to remove those features which have too small area's (that's a bit of trial and error but just be 
 aware that too small slivers will result in an error during mosaicking). 
@@ -51,18 +50,18 @@ small to large in the Attribute Table.
 3. Open the Python window
 
 <img src="https://raw.github.com/vachiwome/server-ingestion-crism/patch-1/ctx_data_guide/img/pythonwindow.png"
- alt="alt" title="title"/>
+ alt="Open python window" title="Open python window"/>
 
 
 4. Select those features belonging to one 'ISLAND':
 
 <img src="https://raw.github.com/vachiwome/server-ingestion-crism/patch-1/ctx_data_guide/img/islandfeatures.png" 
- alt="alt" title="title">
+ alt="Select Island features" title="Select Island features">
   
 You can use the Lasso tool:
 
 <img src="https://raw.github.com/vachiwome/server-ingestion-crism/patch-1/ctx_data_guide/img/lassotool.png" 
- alt="alt" title="title">
+ alt="Using the Lasso tool" title="Using the Lasso tool">
 
 5. Open the Attribute Table and check in the ISLAND field that all selected rows are empty. If one or more contain 
 BOTTOM unselect them. Please check if the ISLAND is still one single ISLAND once you unselect the BOTTOM rows! 
@@ -90,7 +89,7 @@ You can also give all the BOTTOM ones a distinct color using Symbology.
  Before running set the folder variable to the new folder path. And set the island variable to a distinct name.
 7. Repeat 4,5 and 6 for the other islands. With respect to 6 set the island variable to a distinct name.
 8. Make sure to clear selected features
-<img src="https://raw.github.com/vachiwome/server-ingestion-crism/patch-1/ctx_data_guide/img/selectedfeatures.png"       alt="alt" title="title">
+<img src="https://raw.github.com/vachiwome/server-ingestion-crism/patch-1/ctx_data_guide/img/selectedfeatures.png"       alt="Clear selected features" title="Clear selected features">
 
 9. Make sure to select the shapefile in the Table of Contents (warning)
 
